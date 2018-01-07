@@ -1,59 +1,66 @@
 [
     {
-        "name" : "12m",
-        "children" : [
+        "children": [
             {
-                "name" : "help",
-                "children" : [
+                "children": [
                     {
-                        "name" : "10m",
-                        "children" : [
+                        "children": [
                             {
-                                "name" : "heee",
-                                "children" : []
-                            },
+                                "children": [], 
+                                "name": "heee"
+                            }, 
                             {
-                                "name" : "coffee3",
-                                "children" : []
-                            },
+                                "children": [], 
+                                "name": "coffee3"
+                            }, 
                             {
-                                "name" : "osulloc3a",
-                                "children" : []
+                                "children": [], 
+                                "name": "osulloc3a"
                             }
-
-                        ]
+                        ], 
+                        "name": "10m"
                     }
-                ]
-            },
+                ], 
+                "name": "help"
+            }, 
             {
-                "name" : "coffee",
-                "children" : []
-            },
+                "children": [], 
+                "name": "coffee"
+            }, 
             {
-                "name" : "osulloc",
-                "children" : []
+                "children": [], 
+                "name": "osulloc"
             }
-
-        ]
-    },
+        ], 
+        "name": "12m"
+    }, 
     {
-
-        "name" : "11m",
-        "children" : [
+        "children": [
             {
-                "name" : "help2",
-                "children" : []
-            },
+                "children": [], 
+                "name": "help2"
+            }, 
             {
-                "name" : "coffee2",
-                "children" : []
-            },
+                "children": [], 
+                "name": "coffee2"
+            }, 
             {
-                "name" : "osulloc2",
-                "children" : []
+                "children": [], 
+                "name": "osulloc2"
             }
-
-        ]
-
+        ], 
+        "name": "11m"
+    }, 
+    {
+        "children": [], 
+        "name": "binalee"
+    }, 
+    {
+        "children": [], 
+        "name": "binalee2"
+    }, 
+    {
+        "children": [], 
+        "name": "binalee3"
     }
 ]
