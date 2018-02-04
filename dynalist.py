@@ -3,9 +3,11 @@ import json
 FILE_NAME = 'data.json'
 CD = 'cd'
 APPEND = 'app'
+LS = 'ls'
 COMMANDS = frozenset([
     CD,
     APPEND,
+    LS,
 ])
 
 class Node :
@@ -15,6 +17,7 @@ class Node :
 
     def __init__(self, name) :
         self.name = name
+
 
 def print_data(data, depth=0):
     if isinstance(data, list):
@@ -35,8 +38,8 @@ def save_file(data):
     json_str = json.dumps(data, indent=4, sort_keys=True)
     with open(FILE_NAME, 'w') as f:
         f.write(json_str)
-        
-        
+
+
 def find_node(data, node_name):
     if not node_name:
         return data
@@ -60,9 +63,12 @@ if __name__ == '__main__':
             arg = args[1]
         except IndexError:
             arg = None
+
         if command == CD:
             print_data(find_node(d, arg))
         elif command == APPEND:
             append_data(arg, d)
             save_file(d)
             print_data(d)
+        elif command == LS:
+            print_data(find_node(d, arg))
