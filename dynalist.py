@@ -43,7 +43,14 @@ def save_file(data):
 def find_node(data, node_name):
     if not node_name:
         return data
-    for value in data:
+
+    if not isinstance(data, dict):
+        raise TypeError
+
+    if 'children' not in data:
+        raise ValueError
+
+    for value in data.get('children', []):
         if value.get("name") == node_name:
             return value
     return None
@@ -52,6 +59,8 @@ def find_node(data, node_name):
 if __name__ == '__main__':
     with open(FILE_NAME, "r") as f:
         d = json.load(f)
+
+    current_node = d
     while True:
         input_comamnd = raw_input()
         args = input_comamnd.split()
@@ -65,10 +74,10 @@ if __name__ == '__main__':
             arg = None
 
         if command == CD:
-            print_data(find_node(d, arg))
+            current_node = find_node(current_node, arg)
         elif command == APPEND:
-            append_data(arg, d)
-            save_file(d)
-            print_data(d)
+            append_data(arg, current_node)
+            save_file(current_node)
+            print_data(current_node)
         elif command == LS:
-            print_data(find_node(d, arg))
+            print_data(find_node(current_node, arg))
