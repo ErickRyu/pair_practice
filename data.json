@@ -1,66 +1,73 @@
-[
-    {
-        "children": [
-            {
-                "children": [
-                    {
-                        "children": [
-                            {
-                                "children": [], 
-                                "name": "heee"
-                            }, 
-                            {
-                                "children": [], 
-                                "name": "coffee3"
-                            }, 
-                            {
-                                "children": [], 
-                                "name": "osulloc3a"
-                            }
-                        ], 
-                        "name": "10m"
-                    }
-                ], 
-                "name": "help"
-            }, 
-            {
-                "children": [], 
-                "name": "coffee"
-            }, 
-            {
-                "children": [], 
-                "name": "osulloc"
-            }
-        ], 
-        "name": "12m"
-    }, 
-    {
-        "children": [
-            {
-                "children": [], 
-                "name": "help2"
-            }, 
-            {
-                "children": [], 
-                "name": "coffee2"
-            }, 
-            {
-                "children": [], 
-                "name": "osulloc2"
-            }
-        ], 
-        "name": "11m"
-    }, 
-    {
-        "children": [], 
-        "name": "binalee"
-    }, 
-    {
-        "children": [], 
-        "name": "binalee2"
-    }, 
-    {
-        "children": [], 
-        "name": "binalee3"
-    }
-]
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "name": "heee"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "coffee3"
+                                },
+                                {
+                                    "children": [],
+                                    "name": "osulloc3a"
+                                }
+                            ],
+                            "name": "10m"
+                        }
+                    ],
+                    "name": "help"
+                },
+                {
+                    "children": [],
+                    "name": "coffee"
+                },
+                {
+                    "children": [],
+                    "name": "osulloc"
+                }
+            ],
+            "name": "12m"
+        },
+        {
+            "children": [
+                {
+                    "children": [],
+                    "name": "help2"
+                },
+                {
+                    "children": [],
+                    "name": "coffee2"
+                },
+                {
+                    "children": [],
+                    "name": "osulloc2"
+                }
+            ],
+            "name": "11m"
+        },
+        {
+            "children": [],
+            "name": "binalee"
+        },
+        {
+            "children": [],
+            "name": "binalee2"
+        },
+        {
+            "children": [],
+            "name": "binalee3"
+        },
+        {
+            "children": [],
+            "name": "binalee4"
+        }
+    ],
+    "name": "__root__"
+}
